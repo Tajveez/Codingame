@@ -6,16 +6,17 @@ import math
 
 message = input()
 bin_msg = ''
-msg = ''
+#msg = ''
 for char in message:
-    msg = format(ord(char),'b')
-    if len(msg) < 7:
-        while(len(msg) < 7):
-            msg = '0'+ msg
-        bin_msg += msg
-    else:
-        bin_msg += msg#format(ord(char),'b')    
-   # print(bin_msg)
+    bin_msg += format(ord(char),'07b')
+    #msg = format(ord(char),'b')
+    #if len(msg) < 7:
+    #   while(len(msg) < 7):
+    #       msg = '0'+ msg
+    #   bin_msg += msg
+    #else:
+    #   bin_msg += msg#format(ord(char),'b')    
+    #print(bin_msg)
 cur = bin_msg[0]
 count = 1
 result = ''
